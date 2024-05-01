@@ -264,6 +264,20 @@ const NewCardDesign4 = () => {
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+  //openFullImage preview:
+  function openFullImage(pic) {
+    let fullImageBox = document.getElementById("fullImageBox");
+    let fullImage = document.getElementById("fullImage");
+    fullImageBox.style.display = "block";
+    fullImage.src = pic;
+  }
+
+  //Close FullImage Preview
+  function closeFullImage() {
+    let fullImageBox = document.getElementById("fullImageBox");
+
+    fullImageBox.style.display = "none";
+  }
 
   return (
     <>
@@ -379,19 +393,7 @@ const NewCardDesign4 = () => {
             <div className="contact_container">
               
               <div className="contact_box">
-                <div className="svg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#ffffff"
-                      fill-opacity="1"
-                      d="M0,32L21.8,58.7C43.6,85,87,139,131,144C174.5,149,218,107,262,128C305.5,149,349,235,393,240C436.4,245,480,171,524,154.7C567.3,139,611,181,655,202.7C698.2,224,742,224,785,202.7C829.1,181,873,139,916,106.7C960,75,1004,53,1047,69.3C1090.9,85,1135,139,1178,165.3C1221.8,192,1265,192,1309,181.3C1352.7,171,1396,149,1418,138.7L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-                    ></path>
-                  </svg>
-             
-                </div>
+            
                 <div className="icon">
                   <img
                     width="188"
@@ -406,18 +408,7 @@ const NewCardDesign4 = () => {
                 </div>
               </div>
               <div className="contact_box">
-                <div className="svg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#ffffff"
-                      fill-opacity="1"
-                      d="M0,32L21.8,58.7C43.6,85,87,139,131,144C174.5,149,218,107,262,128C305.5,149,349,235,393,240C436.4,245,480,171,524,154.7C567.3,139,611,181,655,202.7C698.2,224,742,224,785,202.7C829.1,181,873,139,916,106.7C960,75,1004,53,1047,69.3C1090.9,85,1135,139,1178,165.3C1221.8,192,1265,192,1309,181.3C1352.7,171,1396,149,1418,138.7L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-                    ></path>
-                  </svg>
-                </div>
+           
                 <div className="icon">
                   <img
                     width="94"
@@ -432,18 +423,7 @@ const NewCardDesign4 = () => {
                 </div>
               </div>
               <div className="contact_box">
-                <div className="svg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#ffffff"
-                      fill-opacity="1"
-                      d="M0,32L21.8,58.7C43.6,85,87,139,131,144C174.5,149,218,107,262,128C305.5,149,349,235,393,240C436.4,245,480,171,524,154.7C567.3,139,611,181,655,202.7C698.2,224,742,224,785,202.7C829.1,181,873,139,916,106.7C960,75,1004,53,1047,69.3C1090.9,85,1135,139,1178,165.3C1221.8,192,1265,192,1309,181.3C1352.7,171,1396,149,1418,138.7L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-                    ></path>
-                  </svg>
-                </div>
+           
                 <div className="icon">
                   <img
                     width="94"
@@ -458,18 +438,7 @@ const NewCardDesign4 = () => {
                 </div>
               </div>
               <div className="contact_box">
-                <div className="svg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#ffffff"
-                      fill-opacity="1"
-                      d="M0,32L21.8,58.7C43.6,85,87,139,131,144C174.5,149,218,107,262,128C305.5,149,349,235,393,240C436.4,245,480,171,524,154.7C567.3,139,611,181,655,202.7C698.2,224,742,224,785,202.7C829.1,181,873,139,916,106.7C960,75,1004,53,1047,69.3C1090.9,85,1135,139,1178,165.3C1221.8,192,1265,192,1309,181.3C1352.7,171,1396,149,1418,138.7L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"
-                    ></path>
-                  </svg>
-                </div>
+           
                 <div className="icon">
                   <img
                     width="94"
@@ -518,18 +487,7 @@ const NewCardDesign4 = () => {
                     debitis cupiditate?
                   </small>
                 </div>
-                <div className="svg_bottom">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#f0eeee"
-                      fill-opacity="1"
-                      d="M0,192L21.8,213.3C43.6,235,87,277,131,261.3C174.5,245,218,171,262,154.7C305.5,139,349,181,393,181.3C436.4,181,480,139,524,101.3C567.3,64,611,32,655,69.3C698.2,107,742,213,785,218.7C829.1,224,873,128,916,106.7C960,85,1004,139,1047,138.7C1090.9,139,1135,85,1178,90.7C1221.8,96,1265,160,1309,208C1352.7,256,1396,288,1418,304L1440,320L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
-                    ></path>
-                  </svg>
-                </div>
+         
               </div>
               <div className="service_box">
                 <div className="service_image">
@@ -551,18 +509,7 @@ const NewCardDesign4 = () => {
                     debitis cupiditate?
                   </small>
                 </div>
-                <div className="svg_bottom">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#f0eeee"
-                      fill-opacity="1"
-                      d="M0,192L21.8,213.3C43.6,235,87,277,131,261.3C174.5,245,218,171,262,154.7C305.5,139,349,181,393,181.3C436.4,181,480,139,524,101.3C567.3,64,611,32,655,69.3C698.2,107,742,213,785,218.7C829.1,224,873,128,916,106.7C960,85,1004,139,1047,138.7C1090.9,139,1135,85,1178,90.7C1221.8,96,1265,160,1309,208C1352.7,256,1396,288,1418,304L1440,320L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
-                    ></path>
-                  </svg>
-                </div>
+             
               </div>
               <div className="service_box">
                 <div className="service_image">
@@ -584,18 +531,7 @@ const NewCardDesign4 = () => {
                     debitis cupiditate?
                   </small>
                 </div>
-                <div className="svg_bottom">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#f0eeee"
-                      fill-opacity="1"
-                      d="M0,192L21.8,213.3C43.6,235,87,277,131,261.3C174.5,245,218,171,262,154.7C305.5,139,349,181,393,181.3C436.4,181,480,139,524,101.3C567.3,64,611,32,655,69.3C698.2,107,742,213,785,218.7C829.1,224,873,128,916,106.7C960,85,1004,139,1047,138.7C1090.9,139,1135,85,1178,90.7C1221.8,96,1265,160,1309,208C1352.7,256,1396,288,1418,304L1440,320L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
-                    ></path>
-                  </svg>
-                </div>
+             
               </div>
               <div className="service_box">
                 <div className="service_image">
@@ -617,18 +553,7 @@ const NewCardDesign4 = () => {
                     debitis cupiditate?
                   </small>
                 </div>
-                <div className="svg_bottom">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                  >
-                    <path
-                      fill="#f0eeee"
-                      fill-opacity="1"
-                      d="M0,192L21.8,213.3C43.6,235,87,277,131,261.3C174.5,245,218,171,262,154.7C305.5,139,349,181,393,181.3C436.4,181,480,139,524,101.3C567.3,64,611,32,655,69.3C698.2,107,742,213,785,218.7C829.1,224,873,128,916,106.7C960,85,1004,139,1047,138.7C1090.9,139,1135,85,1178,90.7C1221.8,96,1265,160,1309,208C1352.7,256,1396,288,1418,304L1440,320L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
-                    ></path>
-                  </svg>
-                </div>
+             
               </div>
             </div>
           </div>
@@ -644,7 +569,9 @@ const NewCardDesign4 = () => {
               />
             </div>
             <div className="Testimonial">
-            <svg className="qrsvg_bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L40,138.7C80,117,160,75,240,64C320,53,400,75,480,101.3C560,128,640,160,720,186.7C800,213,880,235,960,213.3C1040,192,1120,128,1200,106.7C1280,85,1360,107,1400,117.3L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+            
+         
+            <svg className="qrsvg_bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L80,117.3C160,139,320,181,480,186.7C640,192,800,160,960,160C1120,160,1280,192,1360,208L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
               <div className="testimonial_box">
                 <Carousel autoPlay="true">
                   <div className="content">
@@ -733,7 +660,51 @@ const NewCardDesign4 = () => {
               />
             </div>
             <div className="gallery_container">
-              <img src={banner_img} alt="gallery" />
+              <div className="full_image" id="fullImageBox">
+                <div className="close_Full_Image_gallery">
+                  <i
+                    class="bx bxs-message-square-x"
+                    onClick={closeFullImage}
+                  ></i>
+                </div>
+                <img src={banner_img} alt="gallery" id="fullImage" />
+              </div>
+              <div className="col_1">
+                <img
+                  src="https://img.freepik.com/free-photo/top-view-pakistan-food-arrangement_23-2148821544.jpg?t=st=1714279105~exp=1714282705~hmac=0da66ef970a50c799d9d642c2bade46845456abfa8087533bc23459a7816616e&w=740"
+                  alt="gall"
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/high-angle-delicious-pakistan-dish-assortment_23-2148821527.jpg?t=st=1714279138~exp=1714282738~hmac=ab614522e279fa4dd2e7c63c83d39b7c5a7d6bc567614ec7134676c7e0729868&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/high-angle-pakistan-meal-composition_23-2148821517.jpg?t=st=1714279156~exp=1714282756~hmac=3c686a7a32b5edb80a44b6b9dfb42dce2f4d2adb30a65550a71a307dd6034ef6&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+              </div>
+          
+
+              <div className="col_3">
+                <img
+                  src="https://img.freepik.com/free-photo/delicious-indian-food-tray_23-2148723505.jpg?t=st=1714278877~exp=1714282477~hmac=d9a9c0c1807f31ce801b547995e73eb160f0a7d6306c17a4b01e431d369d3c15&w=826"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/photo-traditional-indian-food-dish-celebrate-diwali_125540-3656.jpg?t=st=1714278912~exp=1714282512~hmac=60b7489e40e635a2d53c89952346008e0bc40035bb0ea62476146905205a5fcf&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+                <img
+                  src="https://img.freepik.com/free-photo/selection-food-tray_1340-23421.jpg?t=st=1714278962~exp=1714282562~hmac=9b55c6e21ae72b0ba7e3c09c931f953c1cf4b036828573970ec526bb1ced7c9e&w=900"
+                  alt=""
+                  onClick={(e) => openFullImage(e.target.src)}
+                />
+              </div>
             </div>
           </div>
 
@@ -858,12 +829,7 @@ const NewCardDesign4 = () => {
               />
             </div>
             <div className="feedback_container">
-            {/* <div className="form_svg_top">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,0L60,32C120,64,240,128,360,160C480,192,600,192,720,208C840,224,960,256,1080,261.3C1200,267,1320,245,1380,234.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-              </div> */}
-              <div className="form_svg_bottom">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L205.7,256L411.4,224L617.1,224L822.9,192L1028.6,192L1234.3,288L1440,160L1440,0L1234.3,0L1028.6,0L822.9,0L617.1,0L411.4,0L205.7,0L0,0Z"></path></svg>
-              </div>
+         
               <form action="" onSubmit={feedbackFormik.handleSubmit}>
               <div className="form_group">
                 <label
@@ -1090,7 +1056,9 @@ const NewCardDesign4 = () => {
               {/* Footer */}
               <div className="card4_box_11">
                 <div className="footer_container">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,160C640,149,800,75,960,64C1120,53,1280,107,1360,133.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+          
+               
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#29bdc1" fill-opacity="1" d="M0,288L48,245.3C96,203,192,117,288,80C384,43,480,53,576,80C672,107,768,149,864,154.7C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                 <p>All Copyright Reserved &copy; 2024 myvirtualcard.in</p>
                 </div>
               </div>
