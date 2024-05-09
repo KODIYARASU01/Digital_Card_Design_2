@@ -317,7 +317,7 @@ const NewCardDesign4 = () => {
         <div className="card_design_box1">
           {/* Banner */}
           <div className="card4_box_1">
-            <img src={banner_img} alt="banner" />
+            <img src='https://img.freepik.com/free-photo/futuristic-business-scene-with-ultra-modern-ambiance_23-2151003782.jpg?t=st=1715255039~exp=1715258639~hmac=9fdee3586c0f8d986c8557c4f66ee55e85a858ba31d967d7262e6e7d6403f164&w=900' alt="banner" />
             <div className="overlay"></div>
             <div className="logo">
               <img src={avatar} alt="logo`" />
