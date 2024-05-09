@@ -45,8 +45,40 @@ import { useContext } from "react";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
-
+import vCardsJS from "vcards-js";
 const NewCardDesign4 = () => {
+  let [share, setShare] = useState(false);
+  //create a new vCard
+  var vCard = vCardsJS();
+
+  function generateVCF() {
+    //set properties
+    vCard.firstName = "Jayakumar";
+    vCard.middleName = "";
+    vCard.lastName = "V";
+    vCard.organization = "Aristostech India Private Limited,CEO";
+    vCard.photo.attachFromUrl(
+      "https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100226.jpg?t=st=1714999372~exp=1715002972~hmac=148ead13ab2f0dc4db7268fb984501266e0547e55d0bd1a6918e3e51ca5a5af4&w=740",
+      "JPEG"
+    );
+    vCard.workPhone = "+91 9344482370";
+    vCard.birthday = new Date(1985, 0, 1);
+    vCard.title = "Bussiness Man";
+    vCard.url = "https://www.aristostechindia.com/";
+    vCard.note = "Notes on Eric";
+
+    //save to file
+    // vCard.saveToFile('./eric-nesser.vcf');
+    const linkElement = document.createElement("a");
+    linkElement.setAttribute("href", `data:,${vCard.getFormattedString()}`);
+    linkElement.setAttribute("download", "card.vcf");
+    linkElement.style.display = "none";
+    document.body.appendChild(linkElement);
+    linkElement.click();
+    document.body.removeChild(linkElement);
+  }
+
+
   let [serviceLoad, setServiceLoad] = useState(false);
   console.log(serviceLoad);
   const buttonStyle = {
@@ -453,6 +485,11 @@ const NewCardDesign4 = () => {
                 </div>
               </div>
             </div>
+            <div className="add_to_contact">
+                <button onClick={generateVCF}>
+                  <i className="bx bxs-contact"></i>Add To Contact
+                </button>
+              </div>
           </div>
           {/* Services */}
           <div className="card4_box_5">
@@ -559,6 +596,8 @@ const NewCardDesign4 = () => {
           </div>
           {/* Testimonial */}
           <div className="card4_box_6">
+      
+            <div className="Testimonial">
             <div className="testimonial_title">
               <p>Client's Testimonial </p>
               <img
@@ -568,8 +607,6 @@ const NewCardDesign4 = () => {
                 alt="thumbs-up-down"
               />
             </div>
-            <div className="Testimonial">
-            
          
             <svg className="qrsvg_bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L80,117.3C160,139,320,181,480,186.7C640,192,800,160,960,160C1120,160,1280,192,1360,208L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
               <div className="testimonial_box">
@@ -1058,7 +1095,7 @@ const NewCardDesign4 = () => {
                 <div className="footer_container">
           
                
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#29bdc1" fill-opacity="1" d="M0,288L48,245.3C96,203,192,117,288,80C384,43,480,53,576,80C672,107,768,149,864,154.7C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#79C9E0" fill-opacity="1" d="M0,288L48,245.3C96,203,192,117,288,80C384,43,480,53,576,80C672,107,768,149,864,154.7C960,160,1056,128,1152,122.7C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                 <p>All Copyright Reserved &copy; 2024 myvirtualcard.in</p>
                 </div>
               </div>

@@ -35,7 +35,7 @@
     z-index: 900;
     position: absolute;
     filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.4));
-    background:linear-gradient(280deg,#29bdc1,#29bdc1);
+    background:linear-gradient(280deg,#79C9E0,#79C9E0);
 
     .card4_box_1 {
       width: 100%;
@@ -48,7 +48,7 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
-        filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+        // filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
       }
       .overlay {
         position: absolute;
@@ -77,7 +77,7 @@
           object-fit: cover;
           object-position: center;
           border-radius: 50%;
-          border: 2px solid #e7ff10;
+          border: 2px solid #ffed8a;
           background-color: rgb(228, 228, 228);
           padding: 10px;
         }
@@ -105,9 +105,10 @@
           color: #1d1d1d;
         }
         small {
-          font-size: 0.9rem;
+          font-size: 0.7rem;
           letter-spacing: 1px;
-          color: rgb(255, 238, 0);
+          font-weight: 550;
+          color: #ffed8a;
         }
       }
       .summary {
@@ -150,6 +151,7 @@
             letter-spacing: 1px;
             line-height: 1.3rem;
             text-align: center;
+            color: #1f1f1f;
           }
         }
       }
@@ -281,7 +283,7 @@
             }
             small {
               font-size: 0.7rem;
-              color: #29bdc1;
+              color: #9e9e9e;
               font-weight: 550;
             }
           }
@@ -295,6 +297,47 @@
         grid-row-gap: 1rem;
         
          }
+      }
+      .add_to_contact {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
+
+        button {
+          width: 50%;
+          padding: 10px 1rem;
+          outline: none;
+          border: transparent;
+          background-color: #ffed8a;
+          color: #1a1a1a;
+          font-size: 0.9rem;
+          font-weight: 550;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          transition: all 0.4s ease-in-out;
+          i {
+            color: #292828;
+            transition: all 0.4s ease-in-out;
+          }
+
+          &:hover {
+            background-color: #fff;
+            color: #2e2e2e;
+            filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.5));
+            transition: all 0.4s ease-in-out;
+
+            i{
+              color: #2e2e2e;
+              transition: all 0.4s ease-in-out;
+            }
+          }
+        }
       }
     }
 
@@ -387,9 +430,9 @@
             h4 {
               width: 100%;
               letter-spacing: 1px;
-              font-size: 0.7rem;
+              font-size: 0.8rem;
               font-weight: 550;
-              color: #29bdc1;
+              color: #020202;
             }
             small {
               width: 100%;
@@ -398,7 +441,7 @@
               text-align: start;
               font-size: 0.7rem;
               font-weight: 550;
-              color: #313131;
+              color: #8f8c8c;
             }
           }
           .svg_bottom {
@@ -419,28 +462,7 @@
     .card4_box_6 {
       position: relative;
       padding: 10px 0rem;
-      .testimonial_title {
-        font-family: "Lugrasimo", cursive;
-        font-weight: 400;
-        font-style: normal;
-        padding: 0px 5px;
-        margin-bottom: 0rem;
-     
-        z-index: 700;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 10px;
 
-        p {
-          color: #131313;
-          font-weight: 600;
-        }
-        img {
-          width: 25px;
-          height: 25px;
-        }
-      }
       .Testimonial {
         margin: 2rem auto;
         width: 100%;
@@ -448,6 +470,29 @@
         height: 300px;
         position: relative;
         background-color: #ffffff;
+
+        .testimonial_title {
+          font-family: "Lugrasimo", cursive;
+          font-weight: 400;
+          font-style: normal;
+          padding: 20px 5px;
+     
+       
+          z-index: 700;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+  
+          p {
+            color: #131313;
+            font-weight: 600;
+          }
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
         .qrsvg_bottom {
           position: absolute;
           bottom: -30%;
@@ -463,11 +508,12 @@
           width: 95%;
           padding: 1rem;
           margin: 10px auto;
-          background-color: #29bdc1;
-          filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+          background-color: #fdff87e1;
+          box-shadow: 0px 4px 5px 2px  rgba(0,0,0,0.5);
           color: #000000;
           z-index: 900;
           border-radius: 0.5rem;
+          border-bottom-right-radius: 6rem;
 
           height: auto;
           position: absolute;
@@ -505,7 +551,7 @@
                 gap: 10px;
                 font-size: 0.9rem;
                 font-weight: 550;
-                color: rgb(255, 255, 255);
+                color: rgb(31, 31, 31);
                 text-align: start;
 
                 i {
@@ -539,7 +585,7 @@
                 height: 70px;
                 border-radius: 50%;
 
-                border: 2px solid rgb(252, 252, 252);
+                border: 2px solid rgb(36, 36, 36);
                 object-fit: cover;
                 object-position: center;
               }
@@ -557,9 +603,9 @@
                   font-weight: 500;
                   letter-spacing: 1px;
                   text-align: start;
-                color: #fff;
+                color: #161616;
                   i {
-                    color: rgb(160, 244, 255);
+                    color: rgb(0, 0, 0);
                     font-size: 1.2rem;
                   }
 @media screen and (max-width:900px){
@@ -624,7 +670,10 @@
         background: linear-gradient(#ffffff, #ffffff);
         border-top-right-radius: 8rem;
         border-bottom-right-radius: 8rem;
-        filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+        // filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
+        box-shadow: 0px 4px 5px rgba(0,0,0,0.5);
+        border-left: 0px solid black;
+ 
         padding: 10px 0.7rem;
 
         .qrcode_title {
@@ -751,7 +800,7 @@
             margin: auto;
             width: 100%;
             height: 100%;
-            background-color: #29bdc1;
+            background-color: #79C9E0;
     
             // display: none;
     
@@ -783,8 +832,8 @@
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
-              width: 80%;
-              height: 300px;
+              width: 60%;
+              height: 200px;
               filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
               border-radius: 10px;
               z-index: 1000;
@@ -1078,9 +1127,9 @@
               padding: 10px 4px;
 
               left: 5%;
-              color: rgb(255, 255, 255);
+              color: rgb(34, 34, 34);
               // background: linear-gradient(#000,tomato);
-              -webkit-text-fill-color: rgb(255, 255, 255);
+              -webkit-text-fill-color: rgb(10, 10, 10);
               font-size: 0.7rem;
               font-weight: 550;
 
@@ -1109,7 +1158,7 @@
               border-radius: 0.5rem;
 font-size: 1.2rem;
               background: transparent;
-border: 2px solid rgba(255, 255, 255, 0.541);
+border: 2px solid rgb(255, 255, 255);
               background-origin: border-box;
               background-clip: padding-box, border-box;
               border-radius: 0.3rem;
@@ -1118,7 +1167,7 @@ border: 2px solid rgba(255, 255, 255, 0.541);
               transition: all 0.3s ease;
               &::placeholder {
                 font-size: 0.6rem;
-                color: rgb(37, 37, 37);
+                color: rgb(255, 255, 255);
                 letter-spacing: 1px;
                 font-weight: 400;
               }
@@ -1174,7 +1223,7 @@ border: 2px solid rgba(255, 255, 255, 0.541);
               border-radius: 0.5rem;
 
               background: transparent;
-              border: 2px solid rgba(255, 255, 255, 0.541);
+              border: 2px solid rgb(255, 255, 255);
               background-origin: border-box;
               background-clip: padding-box, border-box;
               border-radius: 0.3rem;
@@ -1183,7 +1232,7 @@ border: 2px solid rgba(255, 255, 255, 0.541);
               transition: all 0.3s ease;
               &::placeholder {
                 font-size: 0.6rem;
-                color: rgb(36, 36, 36);
+                color: rgb(255, 255, 255);
                 letter-spacing: 1px;
                 font-weight: 400;
               }
@@ -1272,6 +1321,7 @@ border: 2px solid rgba(255, 255, 255, 0.541);
               cursor: pointer;
               color: #181818;
               transition: all 0.4s ease-in;
+              filter: drop-shadow(0px 4px 5px rgba(0,0,0,0.5));
 
               img {
                 width: 20px;
@@ -1610,17 +1660,19 @@ border: 2px solid rgba(255, 255, 255, 0.541);
         width: 100%;
         background-color: rgb(255, 255, 255);
         min-height: 70px;
-        height: 70px;
+        height: 80px;
         position: relative;
         display: flex;
         align-items: flex-end;
         justify-content: center;
         z-index: 600;
+        padding-bottom: 10px;
 
         p{
           font-size: 0.8rem;
           color: #000;
           font-weight: 550;
+       
         }
         svg{
           position: absolute;
